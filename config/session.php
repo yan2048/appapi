@@ -23,4 +23,8 @@ return [
     'type'           => '',
     // 是否自动开启 SESSION
     'auto_start'     => true,
+    // 登录成功的session变量
+    'success_session'  => 'adminuser',
+    // session 作用域
+    'session_scope'  => 'admin_scope',
 ];

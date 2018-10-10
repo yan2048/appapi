@@ -25,11 +25,17 @@ return [
     // 模板文件名分隔符
     'view_depr'    => DIRECTORY_SEPARATOR,
     // 模板引擎普通标签开始标记
-    'tpl_begin'    => '{',
+    'tpl_begin'    => '{{',
     // 模板引擎普通标签结束标记
-    'tpl_end'      => '}',
+    'tpl_end'      => '}}',
     // 标签库标签开始标记
-    'taglib_begin' => '{',
+    'taglib_begin' => '{{',
     // 标签库标签结束标记
-    'taglib_end'   => '}',
+    'taglib_end'   => '}}',
+
+    'tpl_cache' => false,
+
+    'tpl_replace_string'  =>  [
+        '__STATIC__' => '/static'
+    ],
 ];
