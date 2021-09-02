@@ -9,4 +9,10 @@ class Index extends Base
     {
         return $this->fetch();
     }
+
+    public function userList()
+    {
+        echo '用户列表';
+        return $this->fetch();
+    }
 }

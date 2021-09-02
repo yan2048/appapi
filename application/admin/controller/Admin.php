@@ -19,9 +19,10 @@ class Admin extends Base
 		return $this->fetch();
 	}
 
-	/**
-	 * 添加管理员
-	 */
+    /**
+     * 添加管理员
+     * @return mixed|void
+     */
 	public function add()
 	{	
 		$validate = validate('User');
@@ -48,8 +49,9 @@ class Admin extends Base
 			return $this->fetch();
 		}
 	}
+
+    public function delList()
+    {
+        return '删除用户列表';
+    }
 }
-
-
-
- ?>

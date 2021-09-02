@@ -10,7 +10,6 @@ class Login extends Base
     //空初始化函数，防止重定向多次
     public function initialize()
     {
-
     }
 
     public function index()
@@ -100,5 +99,10 @@ class Login extends Base
     public function welcome()
     {
     	return '欢迎';
+    }
+
+    public function loginInfo()
+    {
+        return '登录基本信息';
     }
 }
